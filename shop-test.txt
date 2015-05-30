@@ -1,0 +1,18 @@
+firstName: anything
+lastName: anything
+address: 6300 Legacy Drive
+city: Dallas
+zip: 75024
+state: TX
+phone: 10 digits
+email: any valid email
+
+paymentCardType: VISA
+cardNumber: 4112344112344113
+exp Month: 05
+exp Year: 17
+security Code: 011
+
+The only phone that will go through the checkout process is the Samsung Galaxy S 5.
+
+You can apply this promo code to that phone also:           SPPTEST001
