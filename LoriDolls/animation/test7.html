@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<style>
+
+#header, #entete, #button {
+	width:1281px;
+	height:auto;
+	margin:0 auto;
+	
+}
+
+#menu {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:75px; 
+	/*background-color:#DDDDDD;*/
+	color: #FFFFFF;
+	z-index:9999;
+	display: none;
+	text-align:center;
+	
+}
+	
+/*------CS4 EXAMPLE-----------*/	
+
+/*.box {
+    background-color: #fdf1ed;
+    border-corner-shape: scoop;
+    border-radius: 30px;
+    width: 950px;
+    height: 5000px;
+	margin:5% auto 0 auto;
+	
+	
+}*/
+
+
+
+/*-Inverted Rounded Corners Source --http://lea.verou.me/2011/03/beveled-corners-negative-border-radius-with-css3-gradients/--*/
+
+
+.box {
+	background: blue; /* fallback */
+	background:
+		linear-gradient(135deg, transparent 10px, #c00 0) top left,
+		linear-gradient(225deg, transparent 10px, #c00 0) top right,
+		linear-gradient(315deg, transparent 10px, #c00 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #c00 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;	
+	width:950px;
+	height:5000px;
+	margin:5% auto 0 auto;
+}
+
+
+.round {
+	
+background-image:
+		radial-gradient(circle at 0 0, rgba(204,0,0,0) 35px, #c00 15px),
+		radial-gradient(circle at 100% 0, rgba(204,0,0,0) 35px, #c00 15px),
+		radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 35px, #c00 15px),
+		radial-gradient(circle at 0 100%, rgba(204,0,0,0) 35px, #c00 15px);
+		
+}
+	
+	
+	
+}
+
+
+
+</style>
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.gradientify.min.js"></script>
+
+
+</head>
+
+<body style="background:#f9e3ed;">
+
+<!--<div id="header">
+
+<img src="images/pink-header.png" />
+
+</div>-->
+
+<div id="entete">
+
+<img src="images/pink-header-slimmer2.png" />
+
+</div>
+
+<div id="button">
+
+<img src="images/pink-header-slimmer2-menu.png" />
+
+</div>
+
+
+<div id="menu">
+<img src="images/mini-navigation.png" />
+
+</div>
+
+
+<div class="box round">
+
+
+</div>
+
+
+
+
+
+
+<script>
+	$("#header").gradientify({
+		
+		// Gradient angle
+		angle: '0deg',
+
+		// Frames per second
+		fps: 24,
+
+		// Transition time
+		transition_time: 2,
+
+  // Gradients
+  gradients: [
+    { start: [255,255,255], stop: [255,192,0] },
+    { start: [255,192,0], stop: [234,255,0] }
+  ]
+  
+  
+   <!--gradients: [-->
+    <!--{ start: [237,85,101], stop: [218,68,83] },-->
+    <!--{ start: [70,207,176], stop: [52,188,157] },
+    <!--{ start: [52,152,219], stop: [41,128,185] }
+  <!--]
+  
+  
+});
+
+
+
+
+$("#entete").gradientify({
+		
+		// Gradient angle
+		angle: '90deg',
+
+		// Frames per second
+		fps: 24,
+
+		// Transition time
+		transition_time: 2,
+		
+		
+	// Gradients
+  gradients: [
+    { start: [228,255,0], stop: [202,119,53] },
+	{ start: [202,119,53], stop: [228,255,0] }
+	
+  ]	
+		
+		
+		
+		
+
+  // Gradients
+  <!--gradients: [
+    <!--{ start: [243,254,154], stop: [255,162,0] },
+	<!--{ start: [255,162,0], stop: [243,254,154] }
+	
+  <!--]
+  
+  
+  // Gradients
+  <!--gradients: [-->
+    <!--{ start: [236,123,165], stop: [236,123,165] },
+    <!--{ start: [255,192,0], stop: [255,192,0] }
+  <!--]
+  
+  
+   
+  
+  
+});
+
+
+
+
+</script>
+
+
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 400) {
+                $('#menu').fadeIn(150);
+            } else {
+                $('#menu').fadeOut(150);
+            }
+        });
+    });
+})(jQuery);
+</script>
+
+
+</body>
+</html>

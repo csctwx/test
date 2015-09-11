@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+ 
+  <title>Landing Page Template for Bootstrap</title>
+ 
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" >
+ 
+  <!-- Custom Google Web Font -->
+  <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
+ 
+  <!-- Add custom CSS here -->
+  <link href="css/bootstrap-tour.min.css" rel="stylesheet">
+  <!-- <link href="css/landing-page.css" rel="stylesheet"> -->
+ 
+</head>
+<body>
+<div id="content">
+    Hello, World!
+</div>
+<br><br><br>
+<div id="content1">
+    Another Hello, World!
+</div>
+
+<!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-tour.min.js"></script>
+    <script>
+
+      (function(){ 
+          var tour = new Tour({
+              storage : false
+          });
+       
+          tour.addSteps([
+            {
+              element: "#content",
+              placement: "bottom",
+              title: "Welcome to our landing page!",
+              content: "This tour will guide you through some of the features we'd like to point out."
+            },
+            {
+              element: "#content1",
+              placement: "bottom",
+              title: "Main navigation",
+              content: "Here are the sections of this page, easily laid out."
+            },
+            {
+              element: ".tour-step.tour-step-three",
+              placement: "top",
+              backdrop: true,
+              title: "Main section",
+              content: "This is a section that you can read. It has valuable information."
+            },
+       
+          ]);
+       
+          // Initialize the tour
+          tour.init();
+       
+          // Start the tour
+          tour.start();
+       
+      }());
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+	<?xml version = '1.0' encoding = 'UTF-8'?><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head xmlns:XSLStub="http://www.oracle.com/XSL/Transform/java/com.drutt.dp.cp.XSLStub">
+		<link href="css/wap/sprintprepaid-wap.css" rel="stylesheet"/>
+	</head>
+	<body class="body_msdp" id="sprintGeneral">
+		<div class="page_" id="page_b572d8e4-9b16-4d65-9b10-0250242d9a4b">
+			<div class="section_">
+				<div class="module_" id="service_89b73443-3d35-4f6c-a031-7fe308468bab">
+					<div class="container">
+						<script> $(function() { $(".toggle-checkbox").bootstrapSwitch(); $('#reset-to-default').parent().hide(); $(".toggle-checkbox").on('switchChange.bootstrapSwitch', function(event, state) { $('#back-button').parent().hide(); $('#reset-to-default').parent().show(); }); $('#reset-to-default').click( function() { $('.toggle-checkbox').each( function(i, item) { $(this).bootstrapSwitch('state', item.defaultChecked, item.defaultChecked); }); $('#back-button').parent().show(); $('#reset-to-default').parent().hide(); return false; }); }); 
+						</script>
+						<style type="text/css">
+							div.inline{
+								display: inline;
+							}
+						</style>
+						<div class="panel panel-primary">
+							<div class="panel-heading text-center">Call &amp; Content Settings
+							</div><div class="panel-body">
+							<form id="callAndContentForm" method="post" action="/primary/_qWjg6r-ioTESHXn">
+								<input type="hidden" value="Y" name="fpPhoneFlag"/>
+								<input id="subscriberSettings0.id" name="subscriberSettings[0].id" type="hidden" value="CALLER_ID"/>
+								<div class="row">
+									<div class="col-xs-6  inline">
+										<input id="subscriberSettings0.title" name="subscriberSettings[0].title" type="hidden" value="Caller ID Blocking"/>
+										<input id="subscriberSettings0.settingEnabled1" name="subscriberSettings[0].settingEnabled" class="toggle-checkbox" type="checkbox" value="true" checked="checked"/>
+									</div>
+									<div class="row col-xs-12  inline">
+									<input id="subscriberSettings0.description" name="subscriberSettings[0].description" type="hidden" value="NOTE: If caller ID Blocking is enabled,all calls will be affected.To block your number for the next call only,simply dial *67 followed by the 10-digit number you're calling.At the end of that call, your caller ID will resume display."/>
+									NOTE: If caller ID Blocking is enabled,all calls will be affected.To block your number for the next call only,simply dial *67 followed by the 10-digit number you're calling.At the end of that call, your caller ID will resume display.
+								</div>
+								</div>
+
+								<input id="subscriberSettings1.id" name="subscriberSettings[1].id" type="hidden" value="INT"/>
+								<div class="row">
+									<div class="col-xs-6 inline">
+										<input id="subscriberSettings1.title" name="subscriberSettings[1].title" type="hidden" value="International Calling"/>
+										<input id="subscriberSettings1.settingEnabled1" name="subscriberSettings[1].settingEnabled" class="toggle-checkbox" type="checkbox" value="true" checked="checked"/>
+									</div>
+									<div class="row col-xs-12 inline">
+									<input id="subscriberSettings1.description" name="subscriberSettings[1].description" type="hidden" value="This settings allows you to make international calls.Note that international calling may be charged at a different rate.To see a full list of rates visit the main site."/>
+									This settings allows you to make international calls.Note that international calling may be charged at a different rate.To see a full list of rates visit the main site.
+								</div>
+								</div>
+								
+								<input id="subscriberSettings2.id" name="subscriberSettings[2].id" type="hidden" value="CF"/>
+								<div class="row">
+									<div class="col-xs-6 inline">
+										<input id="subscriberSettings2.title" name="subscriberSettings[2].title" type="hidden" value="Content Filter"/>
+										<input id="subscriberSettings2.settingEnabled1" name="subscriberSettings[2].settingEnabled" class="toggle-checkbox" type="checkbox" value="true"/>
+										<input type="hidden" name="_subscriberSettings[2].settingEnabled" value="on"/>
+									</div>
+									<div class="row col-xs-12 inline">
+										<input id="subscriberSettings2.description" name="subscriberSettings[2].description" type="hidden" value="When enabled by the account holder, the Content Filter will restrict access to harmful, obscene or otherwise inappropriate internet content from their device."/>
+										When enabled by the account holder, the Content Filter will restrict access to harmful, obscene or otherwise inappropriate internet content from their device.
+									</div>
+								</div>
+								
+									<div class="row">
+										<div class="col-xs-6">
+											<a id="back-button" class="btn btn-default btn-block" href="/primary/_qWjg6r-iYBGQcCu">Back</a>
+										</div>
+										<div class="col-xs-6"><input type="submit" class="btn btn-primary btn-block"/>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section_"><div class="module_" id="service_d54ea44a-12e2-41ca-bfcc-eb602d192a44">
+				<hr class="hr-solid"/>
+				<div class="container">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<div class="list-group">
+								<a class="list-group-item" href="/primary/_qWjg6r-iYBGQcCu"> Home </a><br/>
+								<a class="list-group-item" href="/primary/_qWjg6r-i4huH4H3"> Payment </a><br/>
+								<a class="list-group-item" href="/primary/_qWjg6r-iabNL5aA1"> Service and Usage </a><br/>
+								<a class="list-group-item" href="/primary/_qWjg6r-iFbUuSDBp"> Settings </a><br/>
+								<a class="list-group-item" href="/primary/_qWjg6r-idbRkvdVd"> Device </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

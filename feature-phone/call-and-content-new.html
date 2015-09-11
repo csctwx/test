@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+ 
+
+<html lang="en">
+<head>
+    <link href="css/wap/sprintprepaid-wap.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+	<script>
+		$(function() {
+			$(".toggle-checkbox").bootstrapSwitch();
+			$('#reset-to-default').parent().hide();
+			$(".toggle-checkbox").on('switchChange.bootstrapSwitch',
+					function(event, state) {
+						$('#back-button').parent().hide();
+						$('#reset-to-default').parent().show();
+					});
+			$('#reset-to-default').click(
+					function() {
+						$('.toggle-checkbox').each(
+								function(i, item) {
+									$(this).bootstrapSwitch('state',
+											item.defaultChecked,
+											item.defaultChecked);
+								});
+						$('#back-button').parent().show();
+						$('#reset-to-default').parent().hide();
+						return false;
+					});
+		});
+	</script>
+	<div class="panel panel-primary">
+		<div class="panel-heading text-center">Call &amp; Content Settings</div>
+		<div class="panel-body">
+			
+			
+			<!-- <form id="callAndContentForm" action="/ADPWebApp_wap/feature_phone/my-account-call-and-content" method="post">
+				 -->
+					<!-- <input id="subscriberSettings0.id" name="subscriberSettings[0].id" type="hidden" value="CALLER_ID"/>
+					<div class="row">
+						<div class="col-xs-6">
+							<input id="subscriberSettings0.title" name="subscriberSettings[0].title" type="hidden" value="Caller ID Blocking"/>
+                                                        
+								
+									<input id="subscriberSettings0.settingEnabled1" name="subscriberSettings[0].settingEnabled" class="toggle-checkbox" disabled="disabled" type="radio" value=""/>
+								
+								
+							
+							<strong>Caller ID Blocking</strong>
+						</div>
+					
+					</div>
+					<div class="row col-xs-12">
+						<input id="subscriberSettings0.description" name="subscriberSettings[0].description" type="hidden" value="NOTE: If caller ID Blocking is enabled,all calls will be affected.To block your number for the next call only,simply dial *67 followed by the 10-digit number you&#39;re calling.At the end of that call, your caller ID will resume display."/>
+						<p>NOTE: If caller ID Blocking is enabled,all calls will be affected.To block your number for the next call only,simply dial *67 followed by the 10-digit number you're calling.At the end of that call, your caller ID will resume display.</p>
+					</div>
+				
+					<input id="subscriberSettings1.id" name="subscriberSettings[1].id" type="hidden" value="INT"/> -->
+					<!-- <div class="row">
+						<div class="col-xs-6">
+							<input id="subscriberSettings1.title" name="subscriberSettings[1].title" type="hidden" value="International Calling"/>
+                                                        
+								
+									<input id="subscriberSettings1.settingEnabled1" name="subscriberSettings[1].settingEnabled" class="toggle-checkbox" disabled="disabled" type="radio" value=""/>
+								
+								
+							
+							<strong>International Calling</strong>
+						</div>
+					
+					</div>
+					<div class="row col-xs-12">
+						<input id="subscriberSettings1.description" name="subscriberSettings[1].description" type="hidden" value="This settings allows you to make international calls.Note that international calling may be charged at a different rate.To see a full list of rates visit the main site."/>
+						<p>This settings allows you to make international calls.Note that international calling may be charged at a different rate.To see a full list of rates visit the main site.</p>
+					</div>
+				
+					<input id="subscriberSettings2.id" name="subscriberSettings[2].id" type="hidden" value="CF"/> -->
+					<br>
+					<div class="row">
+						<div class="col-xs-6">
+							<!-- <input id="subscriberSettings2.title" name="subscriberSettings[2].title" type="hidden" value="Content Filter"/>
+                                                        
+								
+								
+									<input id="subscriberSettings2.settingEnabled1" name="subscriberSettings[2].settingEnabled" class="toggle-checkbox" type="radio" value=""/> -->
+								
+							
+							<a href="#"><strong>Content Filter</strong></a> 
+						</div>
+					
+					</div>
+					<div class="row col-xs-12">
+						<!-- <input id="subscriberSettings2.description" name="subscriberSettings[2].description" type="hidden" value="When enabled by the account holder, the Content Filter will restrict access to harmful, obscene or otherwise inappropriate internet content from their device."/> -->
+						When enabled by the account holder, the Content Filter will restrict access to harmful, obscene or otherwise inappropriate internet content from their device.
+					</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-6">
+						<a id="back-button" href="portal:my-account-home" class="btn btn-default btn-block">Back</a>
+					</div>
+					<!-- <div class="col-xs-6">
+						<button type="button" id="reset-to-default" class="btn btn-default btn-block">Reset</button>
+					</div>
+					<div class="col-xs-6">
+						<button type="submit" class="btn btn-primary btn-block">Submit</button>
+					</div> -->
+				</div>
+			<!-- </form> -->
+		</div>
+	</div>
+</div>
+</body>
+</html>
