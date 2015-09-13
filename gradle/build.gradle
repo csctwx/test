@@ -1,0 +1,16 @@
+task first {
+	doFirst {
+		println "Runing first"
+	}
+}
+
+task second {
+	doLast { 
+		println "Running ${it.name}"
+	}
+}
+
+task third << {
+	taskObject->
+		println "Runing " + taskObject.name	
+}
