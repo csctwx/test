@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" >
+  <link href="css/bootstrap-tour.min.css" rel="stylesheet">
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="bootstrap.tooltip.js"></script>
+  <script src="bootstrap.popover.js"></script>
+  <script src="js/bootstrap-tour.min.js"></script>
+  <script type="text/javascript">
+  	// Create a new tour
+	var tour = new Tour();
+	 
+	// Add your steps
+	tour.addSteps([
+	  {
+	    element: ".message.message-1", // element selector to show the popover next to;
+	    title: "Welcome to my tour!",
+	    content: "We're going to make this quick and useful."
+	  },
+	  {
+	    element: ".message.message-2",
+	    title: "Let's finish this thing off with a bang.",
+	    content: "Boom, bang, bam!"
+	  }
+	]);
+	 
+	// Initialize method on the Tour class. Get's everything loaded up and ready to go.
+	tour.init();
+	 
+	// This starts the tour itself
+	tour.start();
+  </script>
+</head>
+<body>
+    test!!!
+</body>
+</html>
