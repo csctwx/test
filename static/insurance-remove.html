@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<META HTTP-EQUIV="pragma" CONTENT="NO-CACHE" />
+<META HTTP-EQUIV="Expires" CONTENT="0" />
+<meta http-equiv="Cache-Control"
+	content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/sprintprepaid-bootstrap.min.js" type="text/javascript"></script>
+
+<link href="css/sprintprepaid-bootstrap.min.css" rel="stylesheet" />
+<link href="css/sprintprepaid-bootstrap-theme-sales.css"
+	rel="stylesheet" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+	$(function(){
+		$("#btn-open-info").click(function(){
+			$("#btn-open-info").fadeOut();
+			$("#scriber-info").slideDown();
+		});
+		$("#btn-close-info").click(function(){
+			$("#btn-open-info").fadeIn();
+			$("#scriber-info").slideUp();
+		});		
+		$(".dropdown").click(function(){
+			$(".dropdown .dropdown-menu").toggle();
+		});
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor); 
+		var colHeight = $(".section_desktopContent > .col-xs-8").height();
+		if(isChrome){
+		  colHeight += 11;
+		}
+		
+		$(".section_desktopContent > .col-xs-4").css({'height':(colHeight+'px')});
+		
+	});
+</script>
+</head>
+<body class="body_msdp" id="sprintGeneral">
+	<div class="page_sales_portal" id="page_home">
+		<div class="section_header">
+			<header class="row full">
+				<div class="container">
+					<div class="col-xs-12">
+						<div class="navbar pull-left">
+							<ul class="navbar-wrapper">
+								<li class="navbar-item"><a href="#"> <img
+										src="images/spp-logo.png"></a></li>
+								<li class="navbar-item"><a href="#"> <img
+										src="images/logo-boost-white.png"></a></li>
+								<li class="navbar-item"><a href="#"> <img
+										src="images/virgin.png"></a></li>
+							</ul>
+						</div>
+						<div class="navbar pull-right hidden-xs">
+							<ul class="navbar-wrapper">
+								<li class="navbar-item"><a href="#">Username:
+										preferredemployee</a></li>
+								<li class="navbar-item"><a href="#">Door Id: 12345</a></li>
+								<li class="navbar-item"><a href="#">Dealer Code:
+										AWRTEEWWDR</a></li>
+								<li class="navbar-item"><a title="language" href="#">Espanol</a></li>
+								<li class="navbar-item"><a id="menu-nav-logout" href="#">Sign
+										out</a></li>
+							</ul>
+						</div>
+						<div class="col-md-12 text-center nav-container">
+							<ul class="nav nav-pills">
+								<li><a class="main-link" href="#">Home</a></li>
+								<li><a class="main-link" href="#">Activate</a></li>
+								<li><a class="main-link" href="#">Customer Account</a></li>
+								<li><a class="main-link" href="#">Training</a></li>
+								<li><a class="main-link" href="#">Library</a></li>
+								<li><a class="main-link" href="#">Manage</a></li>
+								<li><a class="main-link" href="#">Support</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			 </div>
+			 <!-- banner starts -->
+
+   <div class="section_banner">
+			<div class="container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/banner0.jpg" alt="banner0">
+						</div>
+
+						<div class="item">
+							<img src="images/banner1.jpg" alt="banner1">
+						</div>
+
+
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button"
+						data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a> <a class="right carousel-control" href="#myCarousel" role="button"
+						data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+				 <!-- banner ends -->
+				  <!-- cusomter details starts -->
+				  <div class="section_subscriber_info">
+				  <div class="container ">
+				<!-- Content -->
+			 <div class="panel panel-default">
+			 <div class="row bg-dark">
+				Important! It may take up to 15 minutes for payments or charges to display below. Please allow adequate time between transactions.
+				</div>
+				<div class="col-xs-12 panel panel-default">
+				<div class="col-xs-12">
+				<div class="col-xs-2">
+		         <img src="images/boostlogo.jpg" />
+				</div>
+		        <div class="col-xs-7 text-left h5">
+		        <div class="row top10 ">
+		        <div class="col-xs-4">
+		         <strong>Zachariah Lancermeier </strong>
+		        </div>   
+		         <div class="col-xs-3">
+		         <strong>(123)-456-7890</strong>
+		        </div> 
+		         <div class="col-xs-5">
+		         Customer Since: <strong>09-09-14</strong>
+		        </div>  
+		        </div> 
+		        <div class="row top10 ">
+		        <div class="col-xs-4">
+		         Next Month's Charge<i class="glyphicon glyphicon-info-sign alert-sign"></i>
+		        </div>   
+		         <div class="col-xs-3">
+		         Account Balance<i class="glyphicon glyphicon-info-sign alert-sign"></i>
+		        </div> 
+		         <div class="col-xs-3">
+		         Due by &lt;MRC&gt;<i class="glyphicon glyphicon-info-sign alert-sign"></i>
+		        </div> 
+		        </div> 
+		        <div class="row top10 ">
+		        <div class="col-xs-4">
+		         <strong>$71.00</strong>
+		        </div>   
+		         <div class="col-xs-3">
+		         <strong>$17.00</strong>
+		        </div> 
+		         <div class="col-xs-3">
+		         <strong>$53.00</strong>
+		        </div> 
+		        </div> 
+				</div>
+		        <div class="col-xs-3">
+		         <div class="row top10 bg-blue h5" >
+		         <div class="col-xs-2 h5">
+		          <strong><i class="glyphicon glyphicon-log-out">&nbsp;</i></strong>
+		         </div>
+		          <div class="col-xs-10 h5">
+		         Exit Subscriber Account
+		         </div>
+		         </div>
+		         <div class="row top10 h5" >
+		          <div class="col-xs-10   h5">
+		          <div class="btn btn-defalut ssp-border">
+		         <span class=" h5">Purchase Phone Insurance</span>
+		         </div>
+		         </div>
+		            <div class="col-xs-2 h3">
+		          <i class="glyphicon glyphicon-collapse-down">&nbsp;</i>
+		         </div>
+		         </div>
+		        </div> 
+		        </div>
+		        <div class="col-xs-10 breadcrumb col-xs-offset-1">
+		         <div class="col-xs-12   h5">
+		         <i class="glyphicon glyphicon-info-sign alert-sign">&nbsp;</i>
+		       	 Note the customer has a future dated  service change pending. The amount above is based on that change.
+		         </div>
+		        </div>
+				</div>
+				</div>  
+				</div>
+		        <!-- cusomter details ends -->
+		         <div class="section_desktopContent container">	
+			     <div class="col-xs-8 panel panel-default">
+		          <div class="panel-body">
+		          <div class="col-xs-9 ">
+		           <div class="col-xs-1 h3">
+			         <div class="circle_insurance"></div>
+			       </div>
+                   <div class="col-xs-9 h2">
+		             <strong>Insurance</strong>
+		          </div>
+		          </div>      
+		          <div class="col-xs-3 text-right h3">
+		          Menu &nbsp;<i class="glyphicon glyphicon-align-justify">&nbsp;</i> 
+		          </div>
+		          </div>
+			          <div class="progressArrows col-xs-12 progressArrows-four">
+			                       <ul>
+			                        <li ><a class="current">Select</a></li>
+			                        <li ><a>Contact Info</a></li>
+			                        <li ><a>Review</a></li>
+			                        <li ><a >Success</a></li>
+			                    </ul>
+			                </div> 
+                   <!-- code goes here -->
+			        <div class="col-xs-12  breadcrumb h5">
+				        <div class="col-xs-1 h3 text-right">
+				         <i class="glyphicon glyphicon-alert">&nbsp;</i>
+				         </div>
+				         <div class="col-xs-10  text-left top10 h5">
+				       	<strong>Customer has scheduled Advance Payment </strong><br />
+				       	Advance Payment will be canceled if you proceed with insurance.
+				       	</div>
+		            </div>
+                	 <div class="row ">
+			         <div class="col-xs-12 h5">
+			         <span class="h5"><strong>Remove Insurance</strong></span>
+			         <hr />
+			         </div>
+			         </div>
+			         <div class="row ">
+			         <div class="col-xs-12 ">
+			         The customer's handset has been insured.Would they like to cancel insurance for their handset?If yes please select "no insurance" and then proceed to next step.
+			         </div>
+			         </div>
+			         <div class="row h5">
+			         <div class="col-xs-12 h4">
+			         <input type="checkbox" /><label class="h5"><strong> Remove Phone Insurance effective on Customer's next MRC date:&lt;mm/dd/yyyy&gt;</strong></label>
+			        </div>
+			        </div>
+			        <div class="row h3">
+			        <br />
+                    </div>
+                    <div class="row h5">
+                    <div class="col-xs-12 ">
+                    <strong>If canceled how nad when this will reflect on customer's bill? </strong>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-12 ">
+                    <p class="h5">
+                     Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do elusmod tempor incididnut ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliqup ex ea commodo consequat.Duis aute dolor in reprehendednt in
+                     </p>
+                     <p class="h5">
+                      <ol >
+                     	<li>Phone Insurance subscription will be effective from the payment date.Device must be operational and have no physical damage at the time of enrollement.
+                        </li>
+                        <li>
+						Non-refundable deductible will be $20,$50,$100 or $175 depending on customer's phone type.
+                        </li>
+						<li>Customer is eligible for 2 approved claims within a 12 month period beginning at the date of the first replacement.Claim limit is $1.500 inclusive of accessories.
+						</li>
+						<li>
+						Replacement device will be a reconditioned one of like kind and quality.
+						</li>
+						<li>
+						Phone insurance is optional
+					    </li> 
+					</ol>	
+                     </p>
+                     </div>
+                     </div>
+
+
+                   <!-- code goes here end -->
+
+
+			   <hr />
+			    <div class="row">
+			  <div class="col-xs-12 h5">
+			  <div class="col-xs-5 col-xs-offset-1 btn btn-default">
+			  Back
+			  </div>
+			  <div class="col-xs-1">
+			  &nbsp;
+			  </div>
+			  <div class="col-xs-5 btn btn-primary">
+			  Next
+			  </div>
+			  </div>
+			  </div>
+			 </div>
+			<!-- data panel ends -->
+		  <!-- read only panel starts -->
+		  	<div class="col-xs-4 panel panel-default">				
+				<div class="panel-body">
+					<div class="row  gray-border-bottom">						
+						<h2>SALE OPPORTUNITIES</h2>	
+						<br />				
+						<div class="radial-progress p-0 radial-progress-success">
+							<div class="circle">
+								<div class="fill"></div>
+								<div class="mask"></div>
+								<div class="clip"></div>
+								<div class="circle-text" id="div-talk-circle1">
+									<div class="circle-text-wrapper" id="div-talk-wrapper1">
+										<div id="div-talk-plantype">
+											<strong></strong>
+										</div>
+										<div id="div-talk-talkplan">
+											
+										</div>
+										<div id="div-talk-planunit">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Handset Insurance</h3>
+						Your customer's handset quali for handset insurance.
+						<br /><br />
+						Take the opportunity to explain the benifits of Handset Insurance offers:
+						<ul>
+							<li>Lost stolen or damaged handset can be replaced for a friction of the cost of a new handset.</li>
+							<li>Premium is conveniently included in the customer's monthly charge.</li>
+						</ul>
+					</div>
+					<div class="row  gray-border-bottom">
+						<h3>Heavy Data User</h3>
+						Your customer's is a heavy data user.
+						<br />
+						This would be a good opportunity to move them to a plan with a <span class="text-danger">LARGER DATA BUCKET</span>
+						<ul>
+							<li>Your customer hit their throttle market or data cap 3 times in the last 6 months.</li>
+							<li>Your customer has averaged 7GB of data/mo.</li>
+						</ul>
+					</div>
+					<div class="row  gray-border-bottom">
+						<h3>Upgrade Candidate</h3>
+						<ul>
+							<li>Your customer has had their handset for 1.5 years.</li>
+							<li>Issues have been reported with the handset model your customer has.</li>
+						</ul>
+					</div>
+					<div class="row  gray-border-bottom">
+						<h3>Lorem ipsum</h3>
+						<h5>Lorem ipsum</h5>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a velit non nisl varius vulputate. Aenean at porta quam. Sed dictum nisl nisi, nec varius mi ullamcorper eget. Cras in risus non ante elementum pharetra eget hendrerit erat. Quisque ut lobortis elit. Praesent ultrices, dui et pharetra vulputate, nisl ligula ultrices felis, id lacinia tellus velit vitae nisl. Aliquam massa purus, fringilla vel eros ac, condimentum accumsan elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ultrices ante eu dui rhoncus eleifend. Phasellus at accumsan ipsum.
+					</div>
+					<div class="row  gray-border-bottom">
+						<h3>Lorem ipsum</h3>
+						<h5>Lorem ipsum</h5>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a velit non nisl varius vulputate. Aenean at porta quam. Sed dictum nisl nisi, nec varius mi ullamcorper eget. Cras in risus non ante elementum pharetra eget hendrerit erat. Quisque ut lobortis elit. Praesent ultrices, dui et pharetra vulputate, nisl ligula ultrices felis, id lacinia tellus velit vitae nisl. Aliquam massa purus, fringilla vel eros ac, condimentum accumsan elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ultrices ante eu dui rhoncus eleifend. Phasellus at accumsan ipsum.
+					</div>
+				</div>						
+			</div>
+			</div>						
+		</div>
+		<div class="section_footer">
+			<div class="module_"
+				id="service_0c1b53d8-fe2c-4c91-88db-8e067344df69">
+				<footer>
+					<div class="container">
+						<div class="col-xs-12">
+							<p id="para-footer-message1">
+								©2015 Sprint. <span>All rights reserved.</span>
+							</p>
+							<ul class="footer-links" id="ul-footer-links">
+								<li><a class="no-rewrite" id="menu-nav-legal"
+									href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+								<li><a class="no-rewrite" id="menu-nav-privacy"
+									href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+								<li><a class="no-rewrite" id="menu-nav-cita"
+									href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+								<li><a class="no-rewrite" id="menu-nav-adchoices"
+									href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+	</div>
+		        <!-- /Content-->
+	     <style>
+			.ssp-border{
+		  border:1px solid #CCC;
+		  margin-bottom:1px;
+		  }
+		  .bg-blue{
+		  background-color: #00ACEA;
+		  color:#ffffff;
+		  }
+		 
+		
+        .circle_insurance {
+		border-radius: 50%;
+		width: 30px;
+		height: 30px; 
+		border: 3px solid #ccc;
+	    }
+       label {
+    margin-left: 25px;
+    display: block;
+    font-size: normal !important;
+    font-weight:normal;
+}
+input[type=checkbox] {
+    float: left;
+}
+		</style>
+		</body>
+		</html>

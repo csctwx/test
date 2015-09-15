@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/sprintprepaid-bootstrap.min.js" type="text/javascript"></script>
+<script src="js/bootstrap-tour.min.js" type="text/javascript"></script>
+
+<link href="css/sprintprepaid-bootstrap.min.css" rel="stylesheet" />
+<link href="css/bootstrap-tour.min.css" rel="stylesheet" />
+<link href="css/sprintprepaid-bootstrap-theme-sales.css"
+	rel="stylesheet" />
+
+<title>Customer Account Template</title>
+</head>
+<body class="body_msdp activate" id="sprintGeneral">
+	<div class="page_sales_portal" id="page_home">
+		<div class="section_header">
+			<header class="row full">
+				<div class="container">
+					<div class="col-xs-12">
+						<div class="navbar pull-left">
+							<ul class="navbar-wrapper">
+								<li class="navbar-item"><a href="#"> <img src="images/boost-mobile-logo.jpg" alt="Boost Logo"></a></li>
+								<li class="navbar-item"><a href="#"> <img src="images/virgin.png"  alt="Virgin Logo"></a></li>
+								<li class="navbar-item"><a href="#"> <img src="images/spp-logo.png" alt="SPP Logo"></a></li>
+							</ul>
+						</div>
+						<div class="navbar pull-right hidden-xs">
+							<ul class="navbar-wrapper">
+								<li class="navbar-item"><a href="#">Username:
+										preferredemployee</a></li>
+								<li class="navbar-item"><a href="#">Door Id: 12345</a></li>
+								<li class="navbar-item"><a href="#">Dealer Code:
+										AWRTEEWWDR</a></li>
+								<li class="navbar-item"><a title="language" href="#">Espanol</a></li>
+								<li class="navbar-item"><a id="menu-nav-logout" href="#">Sign
+										out</a></li>
+							</ul>
+						</div>
+						<div class="col-md-12 text-center nav-container">
+							<ul class="nav nav-pills">
+								<li><a class="main-link" href="#">Home</a></li>
+								<li><a class="main-link" href="#">Activate</a></li>
+								<li><a class="main-link" href="#">Customer Account</a></li>
+								<li><a class="main-link" href="#">Training</a></li>
+								<li><a class="main-link" href="#">Library</a></li>
+								<li><a class="main-link" href="#">Manage</a></li>
+								<li><a class="main-link" href="#">Support</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="section_banner">
+			<div class="container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/banner0.jpg" alt="banner0">
+						</div>
+
+						<div class="item">
+							<img src="images/banner1.jpg" alt="banner1">
+						</div>
+
+
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button"
+						data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a> <a class="right carousel-control" href="#myCarousel" role="button"
+						data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>		
+		<div class="section_desktopContent container">
+			<div class="panel panel-default">
+				<div class="panel-body ">
+					<div class="module">
+						<h1>Activate Device</h1>
+					</div>
+					<div class="module">
+						<div class="progressArrows progressArrows-five boost-change-progressArrow">
+							<ul>
+								<li><a class="current"><span class="glyphicon glyphicon-info-sign">&nbsp;</span>Phone Identification</a></li>
+								<li><a><span class="glyphicon glyphicon-info-sign">&nbsp;</span>Phone Number</a></li>
+								<li><a><span class="glyphicon glyphicon-info-sign">&nbsp;</span>Profile</a></li>
+								<li><a><span class="glyphicon glyphicon-info-sign">&nbsp;</span>Plan</a></li>
+								<li><a><span class="glyphicon glyphicon-info-sign">&nbsp;</span>Payment</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-8 activate-customer">
+							<form method="post" action="#">
+								<div class="row gray-border-bottom">
+									<h3>Activate a device for a new &lt;Brand&gt; Customer.</h3>
+								</div>		
+								<div class="row vert-offset-top-1">
+									<p>Start activation process by identifying phone so it can be linked to customer's account.
+									</p>
+									<p>Required is phone's serial number, often called an ESN, MEID or IMEI/MEID.</p>
+									<ul>
+										<li>It can be either 11, 14 or 18 characters long and can be either all numbers or a combination of letters and numbers.</li>
+										<li>it can be found on the phone's packaging on the back of the phone or behind the battery</li>
+									</ul>
+								</div>
+								<div class="row vert-offset-top-1">
+									<p>*Required Information</p>
+								</div>
+								<div class="row vert-offset-top-2">
+									<div class="col-xs-8 col-xs-offset-2">
+										<div class="form-group">
+										  <label for="serial-number">Device Serial Number*</label>
+										  <input type="text" class="form-control" id="serial-number" placeholder="11, 14 or 18 characters ESN or MEID" required value="" maxlength="18" />
+										</div>
+									</div>
+								</div>
+								<div class="row vert-offset-top-1">
+									<div class="row plan-list">
+										<label for="option1" class="list-group-item checked">
+						                      <input id="option1" name="customer_type" value="New Customer" type="radio" checked="checked" /> 
+						                       New Customer who wants to activate new &lt;brand&gt; device.
+						                  </label>
+
+						                  <label for="option2" class="list-group-item">
+						                      <input id="option2" name="customer_type" value="Move Customer" type="radio"/> 
+						                        Move Customer's device from another carrier to &lt;brand&gt;
+						                  </label>
+									</div>
+								</div>
+								<div class="row vert-offset-top-2">
+								<p>The device has a removable SIM card with a serial number(ICCID) below is currently associated to the MEID entered. Please verify it matches the ICCID on the SIM card or on the box the device came in: change as needed. Then click Submit.<br />
+								<a href="#">Click here for help finding ICCID</a></p>
+									<div class="col-xs-8 col-xs-offset-2">
+										<div class="form-group">
+										  <label for="iccid-number">ICCID Serial Number</label>
+										  <input type="text" class="form-control" id="iccid-number" placeholder="123456789876543210" value="" maxlength="18" />
+										  <a href="#">Change ICCID</a>
+										</div>
+									</div>
+								</div>
+								<div class="row vert-offset-top-2">
+									<div class="col-xs-8 col-xs-offset-2 bg-gray">
+										<div class="form-group">
+										  <label for="new-iccid-number">New ICCID Serial Number</label>
+										  <input type="text" class="form-control" id="new-iccid-number" placeholder="123456789876543210" required value="" maxlength="18">
+										</div>
+										<div class="form-group">
+										  <label for="confirm-new-iccid-number">Confirm New ICCID Serial Number</label>
+										  <input type="text" class="form-control" id="confirm-new-iccid-number" placeholder="123456789876543210" required value="" maxlength="18">
+										</div>
+									</div>
+								</div>
+								<div class="row vert-offset-top-3 submit">
+									<div class="col-xs-6">
+										<a id="#" class="btn btn-default btn-block boost-btn-block" href="#">Back</a>
+									</div>
+									<div class="col-xs-6">
+										<button id="next" type="submit" class="btn btn-default btn-block boost-btn-block btn-black">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-xs-4">
+							<div class="row gray-border-bottom">
+								<h3>Check Activation Status</h3>
+							</div>		
+							<div class="row vert-offset-top-1">
+								<p>Check the status of a previously submitted activation request.
+								</p>
+								<p>&gt;<a href="#">Check the status</a> of your current activation to check status the followings are needed:</p>
+								<p>&gt;Your Account PIN</p>
+								<p>&gt;Activation Request Number</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>							
+		</div>
+		<div class="section_footer">
+			<div class="module_"
+				id="service_0c1b53d8-fe2c-4c91-88db-8e067344df69">
+				<footer>
+					<div class="container">
+						<div class="col-xs-12">
+							<p id="para-footer-message1">
+								©2015 Sprint. <span>All rights reserved.</span>
+							</p>
+							<ul class="footer-links" id="ul-footer-links">
+								<li><a class="no-rewrite" id="menu-nav-legal"
+									href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+								<li><a class="no-rewrite" id="menu-nav-privacy"
+									href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+								<li><a class="no-rewrite" id="menu-nav-cita"
+									href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+								<li><a class="no-rewrite" id="menu-nav-adchoices"
+									href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/sales-portal.js" type="text/javascript"></script>
+
+</body>
+</html>
